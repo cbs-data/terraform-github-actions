@@ -1,5 +1,7 @@
 #!/bin/sh
 set -e
+ls
+pwd
 cd "${TF_ACTION_WORKING_DIR:-.}"
 
 if [[ ! -z "$TF_ACTION_TFE_TOKEN" ]]; then
