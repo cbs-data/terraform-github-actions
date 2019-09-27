@@ -1,7 +1,9 @@
 #!/bin/sh
 set -e
-ls
-pwd
+OUTPUT=$(ls)
+echo $OUTPUT
+OUTPUT=$(pwd)
+echo $OUTPUT
 cd "${TF_ACTION_WORKING_DIR:-.}"
 
 if [[ ! -z "$TF_ACTION_TFE_TOKEN" ]]; then
