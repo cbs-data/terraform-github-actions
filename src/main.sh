@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# ADDS GOOGLE CLOUD CREDENTIALS FILE
+export GOOGLE_APPLICATION_CREDENTIALS=/var/sec/gcp_cred.json
+mkdir -p /var/sec
+echo $GOOGLE_CREDENTIALS > /var/sec/gcp_cred.json
+
 function stripColors {
   echo "${1}" | sed 's/\x1b\[[0-9;]*m//g'
 }
