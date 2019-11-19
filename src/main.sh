@@ -4,8 +4,6 @@
 export GOOGLE_APPLICATION_CREDENTIALS=/var/sec/gcp_cred.json
 mkdir -p /var/sec
 echo $GOOGLE_CREDENTIALS > /var/sec/gcp_cred.json
-echo $GOOGLE_CREDENTIALS
-echo "SAMPLE"
 
 function stripColors {
   echo "${1}" | sed 's/\x1b\[[0-9;]*m//g'
