@@ -5,6 +5,8 @@ export GOOGLE_APPLICATION_CREDENTIALS=/var/sec/gcp_cred.json
 mkdir -p /var/sec
 echo $GOOGLE_CREDENTIALS > /var/sec/gcp_cred.json
 
+export TF_VAR_gh_action_ip=$(curl ifconfig.me)
+
 function stripColors {
   echo "${1}" | sed 's/\x1b\[[0-9;]*m//g'
 }
