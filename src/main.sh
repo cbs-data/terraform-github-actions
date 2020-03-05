@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# this setting is a dummy config file, it isnot vqlid but it eliminates a missing config file error from tf
 export KUBECONFIG=/src/config
 # ADDS GOOGLE CLOUD CREDENTIALS FILE
 export GOOGLE_APPLICATION_CREDENTIALS=/var/sec/gcp_cred.json
