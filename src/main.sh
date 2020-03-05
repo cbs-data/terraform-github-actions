@@ -1,7 +1,7 @@
 #!/bin/bash
 
 mkdir ~/.kube
-touch ~/.kube/config
+cp /src/config ~/.kube/config
 # ADDS GOOGLE CLOUD CREDENTIALS FILE
 export GOOGLE_APPLICATION_CREDENTIALS=/var/sec/gcp_cred.json
 mkdir -p /var/sec
